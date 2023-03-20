@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Input page</title>
+    <title>GCPE Attendance</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap"
@@ -22,17 +22,16 @@
             </div>
         </section>
         <form id="my-form" method="POST"
-            action="https://script.google.com/macros/s/AKfycbzuOyoWNNGvxWWg7MJtpLhrwZob-SmKjmxi0bMbhG1s4COzyPgYjK00kmLtfe8D-MCd/exec">
+            action="https://script.google.com/macros/s/AKfycbyXNTd1A7hbIVe5DYCQAq_CM-AOsmGfNnbx7KAwKbNHsnb2yhZr5xSzTO8HN0dkqSepuQ/exec">
             <input class="text-input" name="Email" type="email" placeholder="Email" required />
             <input class="text-input" name="Name" type="text" placeholder="Name" required />
             <input class="text-input" name="Number" type="text" placeholder="Phone number" required />
             <input class="text-input" name="Course" type="text" placeholder="Course" required />
             <input class="text-input" name="Year" type="text" placeholder="Year" required />
-
             <button type="button" id="authorize_button" onclick="handleAuthClick()">Upload Profile Picture</button>
             <img id="profile-picture" src="" alt="Profile Picture" height="100px" width = "100px">
             <input id="profile-link" class="text-input" name="Picture" type="text" placeholder="Not selected"
-                required READONLY />
+                required READONLY/>
             <button type="submit" class="submit" id="submit">Submit</button>
         </form>
 
