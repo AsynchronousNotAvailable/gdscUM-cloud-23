@@ -1,8 +1,3 @@
-/* exported gapiLoaded */
-/* exported gisLoaded */
-/* exported handleAuthClick */
-/* exported handleSignoutClick */
-
 // Authorization scopes required by the API; multiple scopes can be
 // included, separated by spaces.
 const SCOPES = "https://www.googleapis.com/auth/drive";
@@ -21,7 +16,6 @@ let pickerInited = false;
 let gisInited = false;
 
 document.getElementById("authorize_button").style.visibility = "hidden";
-// document.getElementById('signout_button').style.visibility = 'hidden';
 
 /**
  * Callback after api.js is loaded.
@@ -73,7 +67,6 @@ function handleAuthClick() {
       throw response;
     }
     accessToken = response.access_token;
-    // document.getElementById('signout_button').style.visibility = 'visible';
     document.getElementById("authorize_button").innerText = "Change Photo";
     await createPicker();
   };
@@ -97,7 +90,6 @@ function handleSignoutClick() {
     google.accounts.oauth2.revoke(accessToken);
     document.getElementById("content").innerText = "";
     document.getElementById("authorize_button").innerText = "Authorize";
-    // document.getElementById('signout_button').style.visibility = 'hidden';
   }
 }
 
@@ -144,7 +136,6 @@ async function pickerCallback(data) {
     window.document.getElementById(
       "profile-link"
     ).value = `https://drive.google.com/uc?export=view&id=${fileId}`;
-    // text += `Drive API response for first document: \n${JSON.stringify(res.url, null, 2)}\n`;
   }
 }
 
