@@ -15,7 +15,7 @@ function onPickerApiLoad() {
 function gisLoaded() {
     // TODO(developer): Replace with your client ID and required scopes
     tokenClient = google.accounts.oauth2.initTokenClient({
-        client_id: '507701161714-qh4hpbbhv565c7r8ni4fa71dnr93ga0d.apps.googleusercontent.com',
+        client_id: '886441811903-d44lbc16de2m5kdt0fmj6urbojhqddo8.apps.googleusercontent.com',
         scope: 'https://www.googleapis.com/auth/drive',
         callback: '', // defined later
     });
@@ -31,7 +31,7 @@ function createPicker() {
         const picker = new google.picker.PickerBuilder()
             .addView(google.picker.ViewId.DOCS)
             .setOAuthToken(accessToken)
-            .setDeveloperKey('AIzaSyDFan7V1_MKMjJcZ1uAU47kXovI-jBHxPY')
+            .setDeveloperKey('AIzaSyDHBvSHjdhVOOfRROvNc0ISt5BxixjltT4')
             .setCallback(pickerCallback)
             .build();
         picker.setVisible(true);

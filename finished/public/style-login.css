@@ -1,6 +1,14 @@
 * {
   font-family: "Inter";
 }
+#loader img {
+  width: 100px; /* adjust as necessary */
+  height: 100px; /* adjust as necessary */
+  object-fit: contain;
+  object-position: center center;
+  z-index: 2;
+  overflow: hidden;
+}
 
 #container {
   display: flex;

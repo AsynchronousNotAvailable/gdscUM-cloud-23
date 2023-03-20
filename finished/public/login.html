@@ -26,15 +26,19 @@
             <input class="text-input" name="Email" type="email" placeholder="Email" required />
             <input class="text-input" name="Name" type="text" placeholder="Name" required />
             <input class="text-input" name="Number" type="text" placeholder="Phone number" required />
-            <input class="text-input" name="State" type="text" placeholder required />
-            <input class="text-input" name="Country" type="text" placeholder="Country" required />
+            <input class="text-input" name="Course" type="text" placeholder="Course" required />
+            <input class="text-input" name="Year" type="text" placeholder="Year" required />
 
             <button type="button" id="authorize_button" onclick="handleAuthClick()">Upload Profile Picture</button>
-            <img id="profile-picture" src="" alt="Profile Picture" height="200">
+            <img id="profile-picture" src="" alt="Profile Picture" height="100px" width = "100px">
             <input id="profile-link" class="text-input" name="Picture" type="text" placeholder="Not selected"
-                required />
+                required READONLY />
             <button type="submit" class="submit" id="submit">Submit</button>
         </form>
+
+        <div id="loader" style="display:none;">
+            <img src="cloud.gif" alt="Loading..." />
+          </div>
 
         <!-- <script src="./googlePicker.js">
         // AIzaSyDFan7V1_MKMjJcZ1uAU47kXovI-jBHxPY
