@@ -53,6 +53,10 @@ form {
   gap: 1.5rem;
 }
 
+button :hover{
+  cursor: pointer;
+}
+
 .text-input {
   background-color: #dff9fb;
   border-radius: 10px;
